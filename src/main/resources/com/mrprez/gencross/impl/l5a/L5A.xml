@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<personnage name="L5A" version="1.0" gencrossVersion="1.10"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:noNamespaceSchemaLocation="http://mrprez.dyndns.org:8080/gencross-web/gencross-plugin.xsd">
+	<phase name="clan"/>
+	<phaseList>
+		<phase name="clan"/>
+		<phase name="famille"/>
+		<phase name="ecole"/>
+		<phase name="creation"/>
+	</phaseList>
+	<pointPools>
+		<pool name="PC" remaining="45" total="45"/>
+	</pointPools>
+	<properties>
+		<property editable="true" name="Prenom">
+			<Value class="com.mrprez.gencross.value.StringValue"></Value>
+		</property>
+		<property editable="true" name="Clan">
+			<Value class="com.mrprez.gencross.value.StringValue"></Value>
+			<valueChoice>
+				<Value class="com.mrprez.gencross.value.StringValue">Scorpion</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Lion</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Grue</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Dragon</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Licorne</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Crabe</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Phoenix</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Phoenix</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Famille impériale</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Mante</Value>
+				<Value class="com.mrprez.gencross.value.StringValue">Lievre</Value>
+			</valueChoice>
+		</property>
+		<property editable="false" name="famille">
+			<Value class="com.mrprez.gencross.value.StringValue"></Value>
+			<valueChoice></valueChoice>
+		</property>
+		<property editable="false" name="ecole">
+			<Value class="com.mrprez.gencross.value.StringValue"></Value>
+			<valueChoice></valueChoice>
+		</property>
+		<property editable="false" name="Attributs">
+			<propertiesList fixe="true" open="false">
+				<properties>
+					<property editable="false" name="TERRE">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property editable="false" name="Constitution">
+									<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+									</min>
+								</property>
+								<property editable="false" name="Volonté">
+									<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+									</min>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property editable="false" name="FEU">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property editable="false" name="Agilité">
+									<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+									</min>
+								</property>
+								<property editable="false" name="Intelligence">
+									<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+									</min>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property editable="false" name="EAU">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property editable="false" name="Force">
+									<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+									</min>
+								</property>
+								<property editable="false" name="Perception">
+									<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+									</min>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property editable="false" name="AIR">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<propertiesList fixe="true" open="false">
+							<properties>
+								<property editable="false" name="Reflexe">
+									<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+									</min>
+								</property>
+								<property editable="false" name="Intuition">
+									<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+									<min>
+										<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+									</min>
+								</property>
+							</properties>
+						</propertiesList>
+					</property>
+					<property editable="false" name="VIDE">
+						<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">2</Value>
+						</min>
+					</property>
+				</properties>
+			</propertiesList>
+			<historyFactory class="com.mrprez.gencross.history.LevelToReachHistoryFactory">
+				<pointPool>PC</pointPool>
+				<args>
+					<arg key="factor">3</arg>
+				</args>
+			</historyFactory>
+		</property>
+		<property editable="false" name="Compétences">
+			<propertiesList fixe="true" open="false">
+				<properties></properties>
+				<defaultProperty>
+					<property editable="true" name="???">
+						<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">1</Value>
+						</min>
+						<propertiesList fixe="false" open="true">
+							<properties></properties>
+							<defaultProperty>
+								<property editable="false" name="???">
+									<historyFactory class="com.mrprez.gencross.history.ConstantHistoryFactory">
+										<pointPool>PC</pointPool>
+										<args>
+											<arg key="cost">3</arg>
+										</args>
+									</historyFactory>
+								</property>
+							</defaultProperty>
+						</propertiesList>
+						<historyFactory class="com.mrprez.gencross.history.LevelToReachHistoryFactory">
+							<pointPool>PC</pointPool>
+							<args></args>
+						</historyFactory>
+					</property>
+				</defaultProperty>
+			</propertiesList>
+		</property>
+		<property editable="false" name="Honneur">
+			<Value class="com.mrprez.gencross.value.DoubleValue" offset="0.1">1.0</Value>
+		</property>
+		<property editable="false" name="Gloire">
+			<Value class="com.mrprez.gencross.value.DoubleValue" offset="0.1">1.0</Value>
+		</property>
+		<property editable="false" name="Statut">
+			<Value class="com.mrprez.gencross.value.DoubleValue" offset="0.1">1.0</Value>
+		</property>
+		<property editable="false" name="Avantages">
+			<propertiesList fixe="false" open="true">
+				<properties></properties>
+				<defaultProperty>
+					<property editable="true" name="">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<min>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</min>
+					</property>
+				</defaultProperty>
+			</propertiesList>
+			<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+				<pointPool>PC</pointPool>
+				<args></args>
+			</historyFactory>
+		</property>
+		<property editable="false" name="Desavantages">
+			<propertiesList fixe="false" open="true">
+				<properties></properties>
+				<defaultProperty>
+					<property editable="true" name="">
+						<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						<max>
+							<Value class="com.mrprez.gencross.value.IntValue">0</Value>
+						</max>
+					</property>
+				</defaultProperty>
+			</propertiesList>
+			<historyFactory class="com.mrprez.gencross.history.ProportionalHistoryFactory">
+				<pointPool>PC</pointPool>
+				<args></args>
+			</historyFactory>
+		</property>
+	</properties>
+	<beforeChangeValueListeners></beforeChangeValueListeners>
+	<afterChangeValueListeners>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>Attributs#[^#]*#[^#]*</pattern>
+			<arg name="method">changeAttribute</arg>
+		</listener>
+		<listener class="com.mrprez.gencross.listener.custom.CustomAfterChangeValueListener">
+			<pattern>ecole</pattern>
+			<arg name="method">chooseEcoleListener</arg>
+		</listener>
+	</afterChangeValueListeners>
+	<beforeAddPropertyListeners></beforeAddPropertyListeners>
+	<afterAddPropertyListeners></afterAddPropertyListeners>
+	<beforeDeletePropertyListeners></beforeDeletePropertyListeners>
+	<afterDeletePropertyListeners></afterDeletePropertyListeners>
+	<passToNextPhaseListeners></passToNextPhaseListeners>
+	<formulas></formulas>
+	<history></history>
+</personnage>
