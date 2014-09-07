@@ -18,7 +18,7 @@
 	
 	<scm>
 		<connection>scm:git:git://github.com/gencross-plugins/l5a.git</connection>
-		<developerConnection>scm:git@github.com:gencross-plugins/l5a.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:gencross-plugins/l5a.git</developerConnection>
 		<tag>HEAD</tag>
 	</scm>
 	
